@@ -44,8 +44,9 @@ li:hover{
 
 #banner{
     background-image: url('https://otakudonblog.files.wordpress.com/2018/05/banner-image-batman-ninja_1.png');
-    background-position: 25% 50%; 
+    background-position: 50%% 50%; 
     background-size:cover;
+    background-repeat: no-repeat;
     width:100%;
     height:600px;
 }
@@ -61,7 +62,7 @@ li:hover{
     width: 60%;
     display: flex;
     align-items: center;
-justify-content: space-between;
+    justify-content: space-between;
 }
 
 .trailer{
