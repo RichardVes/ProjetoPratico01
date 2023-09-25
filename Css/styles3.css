@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    font-size:50px;
+    
+}
+.container{
+    background-color: wheat;
+    width:100%;
+    height:100%;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px;
+   
+}
+.item{
+    /* height:200px;
+    width:200px; */
+}
+
+.item-1{
+    background-color: red;
+    position: relative;
+}
+.item-1-1{
+    width:100px;
+    height:100px;
+background-color: aquamarine;
+
+
+}
+.item-1-2{
+    width:100px;
+    height:100px;
+background-color: aquamarine;
+position: relative;
+justify-content: center;
+
+}
+.item-1-3{
+    width:100px;
+    height:100px;
+background-color: aquamarine;
+
+}
+.item-2{
+    background-color: blue;
+    overflow: hidden; 
+}
+.child2 {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    text-align: center;
+}
+.item-2-1{
+float: left; /* Alinha a primeira div à esquerda */
+clear: left; /* Evita que divs seguintes flutuem à esquerda */
+}
+.item-2-2{
+    margin: 0 auto;
+}
+.item-2-3{
+float: right; /* Alinha a terceira div à direita */
+clear: right; /* Evita que divs seguintes flutuem à direita */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.item-3{
+    background-color:green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.item-4{
+    background-color:yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 100px;
+    
+  }
+.item-4-1{
+    width:100px;
+    height:100px;
+background-color: aquamarine;
+align-self: flex-start;
+
+}
+.item-4-2{
+    width:100px;
+    height:100px;
+background-color: aquamarine;
+
+align-self: center;
+
+}
+.item-4-3{
+    width:100px;
+    height:100px;
+background-color: aquamarine;
+align-self: flex-end; /* Alinha a terceira div à direita */
+}
