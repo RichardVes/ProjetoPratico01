@@ -3,7 +3,8 @@ main{
     height: 100%;
     background-color: wheat;
     border: 2px solid white;
-    color: red;
+    color:white;
+    font-size:30px;
 }
 img{
     width: 300px;
@@ -31,26 +32,77 @@ img{
 }
 
 .item-direita{
-    background-color: brown;
+    /* background-color: white; */
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 2fr 2fr ;
-    justify-content: space-between;
-}
-.item-dir{
+    grid-template-rows: 0.5fr 1fr 1fr 2fr 2fr ;
+    
     height: 100%;
     width: 100%;
-    border: 2px solid white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    border: 2px solid red;
 }
-.item-dir > img{
-    width: 100px;
-    height: 100px;
+.item-direita1{
+    width:100%;
+    height:100%;
+    padding:20px;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    flex-wrap: nowrap;
+}
+icone1>img{
+    width: 40px;
+    height: 40px;
+}
+.item-direita2{
+    border:2px solid white;
+    width: 100%;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
     
 }
-.item-dir>span{
+icone2{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    
+}
+
+icone2>img{
+    flex: 1 1 50px;
+    max-width: 150px;
+    max-height: 150px;
+    width: 150px;
+    height: 150px;      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.item-direita4 > img{
+    width: 100px;
+    height: 100px;
+    }
+.item-direita4>div{
     
     
     text-align: justify;
@@ -68,4 +120,4 @@ p{
     display: flex;
     justify-content: center;
     font-size: 40px;
-}
+} */
