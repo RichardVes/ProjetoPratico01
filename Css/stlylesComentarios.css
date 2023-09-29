@@ -21,12 +21,13 @@ main{
 }
 .direita{
     display: grid;
-    grid-template-rows: 0.5fr 1fr 1fr 2fr 2fr ;
+    grid-template-rows: 0.5fr 1fr 0.5fr 2fr 2fr ;
     height: 100%;
     width: 100%;
     border: 2px solid red;
    
 }
+
 .item-direita1{
     margin: 10px;
     display: flex;
@@ -37,14 +38,6 @@ icone1>img{
     width: 40px;
     height:40px;
 }
-
-
-
-
-
-
-
-
 
 .item-direita2{
     width: 100%;
@@ -64,26 +57,37 @@ icone2>img{
     display: block;
 }
 
+.item-direita3{
+display: flex;
+align-items: center;
 
+}
+icone3>img{
+    width:60px;
+    height:60px;
+}
+.item-direita4{
+    display: flex;
+    font-size: 40px;
+    max-width: 1800px;
+    min-width: 1000px;
+    max-height: 400px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.item-direita4>h3{
+    flex-wrap: wrap;
+    background-color: gray;
+    max-width: 1200px;
+    margin-left: 40px;
+    
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+icone4>img{
+    width: 200px;
+    height: 200px;
+}
 
 
 
@@ -100,8 +104,8 @@ icone2>img{
     justify-content: center;
     align-items:center ;
 }
-
-
+/* <i class='bx bxl-steam'></i>
+font-size: 50px; */
 
 
 
