@@ -27,6 +27,25 @@ main{
     border: 2px solid red;
    
 }
+.item-direita1{
+    margin: 10px;
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+}
+icone1>img{
+    width: 40px;
+    height:40px;
+}
+
+
+
+
+
+
+
+
+
 .item-direita2{
     width: 100%;
     height: 100%;
@@ -35,7 +54,6 @@ main{
    
 }
 icone2{
-    
     flex: 1 1 100px;
     display: block;
     max-width: 150px;
