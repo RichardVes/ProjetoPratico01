@@ -1,198 +1,231 @@
 main{
-    width: 100vw;
-    height: 100vh;
-    border: 2px solid white;
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
     color:white;
-    padding: 15px;
-    display: flex;
-    border: 2px solid white;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    font-size: 20px;
+    font-family:"Kdam Thmor Pro", sans-serif ;
 }
 
 .item{
-   
+   width: 100%;
+   height: 100%;
+   padding: 20px;
 }
-.esquerda{
+.item-esquerda{
+    width: 100%;
+    height: 100%;
     background-color: green;
     border: 2px solid white;
 }
-.centro{
+.item-centro{
+    width: 100%;
+    height: 100%;
     background-color: blueviolet;
     border: 2px solid white;
+    display: flex;
+    
 }
-.direita{
-    display: grid;
-    grid-template-rows: 0.5fr 1fr 0.5fr 2fr 2fr ;
-    height: 100%;
+.item-direita{
     width: 100%;
-    border: 2px solid red;
-   
-}
-
+    height: 100%;
+    border: 2px solid white;
+    display: grid;
+    grid-template-rows: 80px 300px 60px 600px 0.4fr ;
+    min-width: 220px;
+    /* Preciso trasformar o 600px em variavel de tamanho flexivel */
+ }
 .item-direita1{
-    margin: 10px;
     display: flex;
     align-items: end;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 icone1>img{
-    width: 40px;
-    height:40px;
+    width: 20px;
+    height:20px;
 }
-
-.item-direita2{
+.item-direita2{  /*não consegui tirar o fundo preto para alinha das imagens umas as outras */
     width: 100%;
-    height: 100%;
+    height: 300px;
     display: flex;
     flex-wrap: wrap;
-   
+    max-width: 400px;
+    justify-self: center;
 }
 icone2{
-    flex: 1 1 100px;
-    display: block;
-    max-width: 150px;
+    display: flex;
+    flex:1 1 50px;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 80px;
+    max-height: 100px;
 }
 icone2>img{
-    max-width: 100%;
+    max-width:100%;
     max-height: 100%;
     display: block;
 }
 
 .item-direita3{
+width: 100%;
 display: flex;
-align-items: center;
-
+flex-direction: row;
+justify-content: space-between;
+align-items: end;
+}
+.item-direita3>div{
+    display: flex;
+    align-items: end;
+}
+.item-direita3>div>h2{
+    font-size: 30px;
+    padding: 0 30px 0 30px;
+}
+icone3{
+    width: 60px;
+    height: 60px;
 }
 icone3>img{
     width:60px;
     height:60px;
 }
-.item-direita4{
+
+.item-direita4{ border: 2px solid rgb(247, 3, 3);
+    width: 100%;
+    height: 100%;
+    min-width: 220px;
+
+
     display: flex;
-    font-size: 40px;
-    max-width: 1800px;
-    min-width: 1000px;
-    max-height: 400px;
-    align-items: center;
     justify-content: center;
+    align-items: top;
+/* 
+    flex:1 1 400px;
+
+    max-height: 600px;
     
+    
+    
+     */
+   
+    /* max-width: 1800px;
+    min-width: 1000px;
+    max-height: 400px; */
+ 
+    
+   
+}
+icone4>img{border: 2px solid rgb(247, 3, 3);
+    display: flex;
+    flex:1 1 50px;
+    width: 100%;
+    height: 100%;
+    max-height: 150px;
 }
 .item-direita4>h3{
+    height: 80%;
+    width: 100%;
+    font-size: 18px;
     flex-wrap: wrap;
+    text-align: justify;
     background-color: gray;
-    max-width: 1200px;
-    margin-left: 40px;
+    max-width: 400px;
+    margin: 0 10px 0 10px;
+}   
+
+/*
+.direita>button{
+display: flex;
+align-self: start;
+justify-self: center;
+
+}
+.button{
+    width:200px;
+    height:60px;
+    background-color: #d21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: .8s;
+    font-size:18px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:bold ;
+    border:none;
+    outline:none;
+    margin-top:25px;
     
 }
 
-icone4>img{
-    width: 200px;
-    height: 200px;
+.button:hover{
+background-color: #fff;
+color: #000;
+
 }
+.item-direita5{
+    display: flex;
+    align-self: center;
+    /* justify-self: center; *//*
+    justify-content: space-between;
+    padding-left:0px;
+    padding-right:0px;
+    transformSS: 2.5s;
+}
+.item-direita5-1:hover{
+    justify-content: space-around;
+    padding-left:150px;
+    padding-right: 150px;
 
-
-
-
-
-
-
-
-
-
+}*/
 .item-direita5>div>img{
     width: 200px;
     height: 150px;
     justify-content: center;
     align-items:center ;
+    border: 5px solid rebeccapurple;
 }
-/* <i class='bx bxl-steam'></i>
-font-size: 50px; */
-
-
-
-/* .item-direita1{
-    width:100%;
-    height:100%;
-    padding:20px;
-    display: flex;
-    align-items: end;
-    justify-content: start;
-    flex-wrap: nowrap;
-}
-icone1>img{
-    width: 40px;
-    height: 40px;
-    max-width: 100%;
-    display: block;    
-}
-.item-direita2{
-   display: flex;
-    border:2px solid white;
-    width: 100%;
-    height:100%;
-    align-items: center;
-    justify-content: center;
-    max-width: 500px;
-    margin: 0 auto;
-    
-}
-.item-direita2>icone2{
-    flex:1 1 150px;
-}
-icone2{
-    display: flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    
+/*
+.item {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    position: absolute;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 
-icone2>img{
-    flex: 1 1 50px;
-    max-width: 150px;
-    max-height: 150px;
-    width: 150px;
-    height: 150px;      
+#item1 {
+    animation-name: moveFromLeft;
 }
- */
 
+#item2 {
+    animation-name: moveFromRight;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.item-direita4 > img{
-    width: 100px;
-    height: 100px;
+@keyframes moveFromLeft {
+    from {
+        left: -50px;
     }
-.item-direita4>div{
-    
-    
-    text-align: justify;
-    padding: 10px 20px;
-    background-color:grey;
-    font-size: 30px;
+    to {
+        left: calc(50% - 25px);
+    }
 }
-.dir-item{
-    height: auto;
-    width: auto;   
-    background-color: aquamarine;
-    margin: 10px;
-}
-p{
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
+
+@keyframes moveFromRight {
+    from {
+        right: -50px;
+    }
+    to {
+        right: calc(50% - 25px);
+    }
 } */
+
+
