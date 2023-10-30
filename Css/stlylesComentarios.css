@@ -5,24 +5,24 @@ main{
     color:white;
     margin: 20px;
     padding: 20px;
-    display: grid;
-    grid-template-columns:  1fr 1fr 1fr;
-    font-size: 20px;
     font-family:"Kdam Thmor Pro", sans-serif ;
 }
 
-.item{
+.itens{
    width: 100%;
    height: 100%;
    padding: 20px;
+   display: grid;
+   grid-template-columns:  1fr 1fr 1fr;
+   font-size: 20px;
 }
-.item-esquerda{
+.conteiner-esquerdo{
     width: 100%;
     height: 100%;
     background-color: green;
     border: 2px solid white;
 }
-.item-centro{
+.conteiner-centro{
     width: 100%;
     height: 100%;
     background-color: blueviolet;
@@ -30,16 +30,23 @@ main{
     display: flex;
     
 }
-.item-direita{
+.conteiner-direito{ 
     width: 100%;
     height: 100%;
-    border: 2px solid white;
     display: grid;
-    grid-template-rows: 80px 300px 60px 600px 0.4fr ;
-    min-width: 220px;
-    /* Preciso trasformar o 600px em variavel de tamanho flexivel */
- }
+    justify-content: center;
+}
+.item-direita{ 
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 80px auto 60px auto 0.4fr ;
+}
 .item-direita1{
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: end;
     flex-wrap: nowrap;
@@ -48,12 +55,13 @@ icone1>img{
     width: 20px;
     height:20px;
 }
-.item-direita2{  /*não consegui tirar o fundo preto para alinha das imagens umas as outras */
+.item-direita2{ 
     width: 100%;
-    height: 300px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
-    max-width: 400px;
+    
+    
     justify-self: center;
 }
 icone2{
@@ -93,41 +101,25 @@ icone3>img{
     width:60px;
     height:60px;
 }
-
-.item-direita4{ border: 2px solid rgb(247, 3, 3);
+.item-direita4{ 
     width: 100%;
     height: 100%;
     min-width: 220px;
-
-
     display: flex;
     justify-content: center;
-    align-items: top;
-/* 
-    flex:1 1 400px;
-
-    max-height: 600px;
+    align-items:flex-start;
     
-    
-    
-     */
-   
-    /* max-width: 1800px;
-    min-width: 1000px;
-    max-height: 400px; */
- 
-    
-   
 }
-icone4>img{border: 2px solid rgb(247, 3, 3);
+icone4>img{
     display: flex;
     flex:1 1 50px;
     width: 100%;
     height: 100%;
-    max-height: 150px;
+    min-width: 50px;
+    max-height: 100px;
 }
-.item-direita4>h3{
-    height: 80%;
+.item-direita4>h3{ 
+    height: auto;
     width: 100%;
     font-size: 18px;
     flex-wrap: wrap;
@@ -137,60 +129,25 @@ icone4>img{border: 2px solid rgb(247, 3, 3);
     margin: 0 10px 0 10px;
 }   
 
-/*
-.direita>button{
-display: flex;
-align-self: start;
-justify-self: center;
-
-}
-.button{
-    width:200px;
-    height:60px;
-    background-color: #d21617;
-    color: #fff;
-    padding: 8px 10px;
-    border-radius: 5px;
-    cursor:pointer;
-    transition: .8s;
-    font-size:18px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-weight:bold ;
-    border:none;
-    outline:none;
-    margin-top:25px;
-    
-}
-
-.button:hover{
-background-color: #fff;
-color: #000;
-
-}
 .item-direita5{
+    width: 100%;
+    height:100%;
+    padding: 5px;
     display: flex;
-    align-self: center;
-    /* justify-self: center; *//*
-    justify-content: space-between;
-    padding-left:0px;
-    padding-right:0px;
-    transformSS: 2.5s;
-}
-.item-direita5-1:hover{
-    justify-content: space-around;
-    padding-left:150px;
-    padding-right: 150px;
-
-}*/
-.item-direita5>div>img{
-    width: 200px;
-    height: 150px;
     justify-content: center;
-    align-items:center ;
-    border: 5px solid rebeccapurple;
 }
+.item-direita5>div{
+    margin: 0 20px 0 20px;
+    display:flex;
+    flex-direction: column;
+}
+.item-direita5>div>img{
+    width: 100%;
+    height:100%;
+    max-width: 200px;
+    min-width: 80px;
+}
+
 /*
 .item {
     width: 50px;
